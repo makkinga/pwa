@@ -17,10 +17,11 @@ var filesToCache = [
 self.addEventListener("install", event => {
     this.skipWaiting();
     event.waitUntil(
-        caches.open(staticCacheName)
-            .then(cache => {
-                return cache.addAll(filesToCache);
-            })
+        caches.open(staticCacheName).then(function(cache) {
+            filesToCache.forEach(function (url) {
+                cache.add(url);
+            });
+        })
     )
 });
 
@@ -49,4 +50,17 @@ self.addEventListener("fetch", event => {
                 return caches.match('offline');
             })
     )
+});
+
+self.addEventListener('push', function(event) {
+    if (event.data) {
+        var data = event.data.json();
+        self.registration.showNotification(data.title,{
+            body: data.body,
+            icon: data.icon
+        });
+        console.log('This push event has data: ', event.data.text());
+    } else {
+        console.log('This push event has no data.');
+    }
 });

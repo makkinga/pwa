@@ -31,6 +31,8 @@
 <meta name="msapplication-TileImage" content="{{ data_get(end($config['icons']), 'src') }}">
 
 <script type="text/javascript">
+    let _registration = null;
+
     // Initialize the service worker
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/serviceworker.js', {
@@ -38,6 +40,9 @@
         }).then(function (registration) {
             // Registration was successful
             console.log('Laravel PWA: ServiceWorker registration successful with scope: ', registration.scope);
+            _registration = registration;
+
+            return registration;
         }, function (err) {
             // registration failed :(
             console.log('Laravel PWA: ServiceWorker registration failed: ', err);
