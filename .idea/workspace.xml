@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b69f02a-1351-44ae-9361-7dbf69e395bf" name="Default Changelist" comment="" />
+    <list default="true" id="0b69f02a-1351-44ae-9361-7dbf69e395bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +14,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -112,6 +117,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1bIQjiIQoTN0PHTWxm3esjEIWCo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -139,11 +145,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588317264709</updated>
-      <workItem from="1588317266677" duration="248000" />
+      <workItem from="1588317266677" duration="405000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1588317665218">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/-1680.23.1680.1027/0.23.1920.1057@0.23.1920.1057" timestamp="1588317665218" />
   </component>
 </project>
